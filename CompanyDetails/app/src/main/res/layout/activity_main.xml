@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/amrita"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:contentDescription="Company Image"
+        android:src="@drawable/amrita" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="Jayaraj - 21026"/>
+
+    <ImageView
+        android:id="@+id/companyImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:contentDescription="Company Image"
+        android:src="@drawable/img" />
+
+    <EditText
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/foundedDate"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Founded Date"
+        android:background="@drawable/edit_text_background"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Save"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Companies"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/savedCompaniesText"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="16dp"-->
+<!--        android:text="Saved Companies:"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/colorPrimary" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:nestedScrollingEnabled="false" />
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:padding="16dp"-->
+<!--    tools:context=".MainActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/companyImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:contentDescription="Company Image"-->
+<!--        android:src="@drawable/img" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/companyName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Company Name" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/description"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Description" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/foundedDate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Founded Date" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/saveButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Save" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/searchButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Search Companies" />-->
+
+<!--</LinearLayout>-->
